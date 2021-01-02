@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Porównanie</title>
+    <link rel="stylesheet" href="gl.css" />
+  </head>
+  <body>
+    <div id="dialogoverlay"></div>
+    <div id="dialogbox">
+      <div>
+        <div id="dialogboxhead"></div>
+        <div id="dialogboxbody"></div>
+        <div id="dialogboxfoot"></div>
+      </div>
+    </div>
+    <div id="cena">
+      <h1>fuel cost comparison</h1>
+      <label for="cena-paliwa" class="cena">fuel price:</label>
+      <input
+        id="cena-paliwa"
+        type="number"
+        name=""
+        value="0.00"
+        min="0"
+        max="100"
+        step="0.01"
+        maxlength="4"
+        oninput="correctPrice(this)"
+      /><br />
+      <p id="myHeadingCena"></p>
+    </div>
+
+    <div id="samochody">
+      <div id="spalinowy">
+        <h1>combustion car</h1>
+        <h3>combustion factor in the city: 8l/100 km</h3>
+        <h3>number of kilometers driven:</h3>
+        <span id="x-s-m" style="display:none"></span>
+        <div id="s-miasto">&nbsp;</div>
+        <input
+          id="spalinowy-km-miasto"
+          type="range"
+          min="0"
+          max="1000"
+          step="1"
+          value="0"
+          name=""
+          onchange="correctPrice()"
+        />
+        <br />
+
+        <h3>combustion factor on the route: 5l/100 km</h3>
+        <h3>number of kilometers driven:</h3>
+        <span id="y-s-t" style="display:none"></span>
+        <div id="s-trasa">&nbsp;</div>
+        <input
+          id="spalinowy-km-trasa"
+          type="range"
+          min="0"
+          max="1000"
+          step="1"
+          value="0"
+          name=""
+          onchange="correctPrice()"
+        />
+        <br />
+        <p></p>
+        
+        <h2 id="myHeadingSpalinowy"></h2>
+      </div>
+
+      <div id="hybrydowy">
+        <h1>hybrid car</h1>
+        <h3>combustion factor in the city: 4l/100 km</h3>
+        <h3>number of kilometers driven:</h3>
+        <span id="z-h-m" style="display:none"></span>
+        <div id="h-miasto">&nbsp;</div>
+        <input
+          id="hybrydowy-km-miasto"
+          type="range"
+          min="0"
+          max="1000"
+          step="1"
+          value="0"
+          name=""
+          onchange="correctPrice()"
+        />
+        <br />
+
+        <h3>combustion factor on the route: 7l/100 km</h3>
+        <h3>number of kilometers driven:</h3>
+        <span id="a-h-t" style="display:none"></span>
+        <div id="h-trasa">&nbsp;</div>
+        <input
+          id="hybrydowy-km-trasa"
+          type="range"
+          min="0"
+          max="1000"
+          step="1"
+          value="0"
+          name=""
+          onchange="correctPrice()"
+        />
+        <br />
+        <p></p>
+
+        <h2 id="myHeadingHybrydowy"></h2>
+      </div>
+    </div>
+
+    <script src="gl.js"></script>
+  </body>
+</html>

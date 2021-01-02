@@ -1,0 +1,226 @@
+#cena {
+    margin-bottom: 4px;
+    text-align: center;
+    border-radius: 15px;
+    position: relative;
+    width: auto;
+  }
+  
+  #samochody {
+    background-color: rgb(183, 223, 183);
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  #spalinowy {
+    flex-basis: 48%;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+  }
+  
+  #hybrydowy {
+    flex-basis: 48%;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+  }
+  .create-button {
+    padding: 15px;
+    background-color: rgb(84, 214, 95);
+    font-size: 15px;
+    width: 30%;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 15px;
+  }
+  .cena {
+    padding: 15px;
+    margin-left: 20px;
+    width: 30%;
+    font-size: 25px;
+  }
+  #cena-paliwa {
+    padding: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 15px;
+  }
+  
+  #spalinowy-km-miasto {
+    width: 100%;
+    height: 5px;
+    background-color: rgb(183, 223, 183);
+    -webkit-appearance: none;
+    border-radius: 5px;
+    box-shadow: inset 0 3px 18px rgba(0, 0, 0, 0, 6);
+    cursor: pointer;
+    outline: none;
+  }
+  #spalinowy-km-miasto::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(93, 80, 99);
+    border-radius: 50%;
+    outline: none;
+  }
+  #spalinowy-km-miasto::-webkit-slider-thumb:hover {
+    box-shadow: 0 0 0 3px rgb(93, 80, 99), 0 0 0 6px white;
+  }
+  #spalinowy-km-miasto:active::-webkit-slider-thumb {
+    box-shadow: 0 0 0 3px rgb(183, 223, 183), 0 0 0 6px white;
+  }
+  #spalinowy-km-trasa {
+    width: 100%;
+    height: 5px;
+    background-color: rgb(183, 223, 183);
+    -webkit-appearance: none;
+    border-radius: 5px;
+    box-shadow: inset 0 3px 18px rgba(0, 0, 0, 0, 6);
+    cursor: pointer;
+    outline: none;
+  }
+  #spalinowy-km-trasa::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(93, 80, 99);
+    border-radius: 50%;
+    outline: none;
+  }
+  #spalinowy-km-trasa::-webkit-slider-thumb:hover {
+    box-shadow: 0 0 0 3px rgb(93, 80, 99), 0 0 0 6px white;
+  }
+  #spalinowy-km-trasa:active::-webkit-slider-thumb {
+    box-shadow: 0 0 0 3px rgb(183, 223, 183), 0 0 0 6px white;
+  }
+  
+  #hybrydowy-km-miasto {
+    width: 100%;
+    height: 5px;
+    background-color: rgb(183, 223, 183);
+    -webkit-appearance: none;
+    border-radius: 5px;
+    box-shadow: inset 0 3px 18px rgba(0, 0, 0, 0, 6);
+    cursor: pointer;
+    outline: none;
+  }
+  #hybrydowy-km-miasto::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(93, 80, 99);
+    border-radius: 50%;
+    outline: none;
+  }
+  #hybrydowy-km-miasto::-webkit-slider-thumb:hover {
+    box-shadow: 0 0 0 3px rgb(93, 80, 99), 0 0 0 6px white;
+  }
+  #hybrydowy-km-miasto:active::-webkit-slider-thumb {
+    box-shadow: 0 0 0 3px rgb(183, 223, 183), 0 0 0 6px white;
+  }
+  
+  #hybrydowy-km-trasa {
+    width: 100%;
+    height: 5px;
+    background-color: rgb(183, 223, 183);
+    -webkit-appearance: none;
+    border-radius: 5px;
+    box-shadow: inset 0 3px 18px rgba(0, 0, 0, 0, 6);
+    cursor: pointer;
+    outline: none;
+  }
+  #hybrydowy-km-trasa::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(93, 80, 99);
+    border-radius: 50%;
+    outline: none;
+  }
+  #hybrydowy-km-trasa::-webkit-slider-thumb:hover {
+    box-shadow: 0 0 0 3px rgb(93, 80, 99), 0 0 0 6px white;
+  }
+  #hybrydowy-km-trasa:active::-webkit-slider-thumb {
+    box-shadow: 0 0 0 3px rgb(183, 223, 183), 0 0 0 6px white;
+  }
+  
+  #h-trasa {
+    font-weight: bold;
+    font-size: 25px;
+  }
+  
+  #h-miasto {
+    font-weight: bold;
+    font-size: 25px;
+  }
+  #s-trasa {
+    font-weight: bold;
+    font-size: 25px;
+  }
+  #s-miasto {
+    font-weight: bold;
+    font-size: 25px;
+  }
+  #myHeadingCena {
+    color: red;
+  }
+  #dialogoverlay {
+    display: none;
+    opacity: 0.8;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: #FFF;
+    width: 100%;
+    z-index: 10;
+  }
+  #dialogbox {
+    display: none;
+    position: fixed;
+    background: #000;
+    border-radius: 7px;
+    width: 550px;
+    z-index: 10;
+    background: #FFF;
+    margin: 8px;
+  }
+  
+  #dialogboxhead {
+    background: rgb(63, 57, 112);
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    color: whitesmoke;
+  }
+  #dialogboxbody {
+    background: rgb(144, 159, 177);
+    text-align: center;
+    font-size: 25px;
+    text-decoration-color: teal;
+    padding: 10px;
+    color: whitesmoke;
+  }
+  #dialogboxfoot {
+    background: rgb(63, 57, 112);
+    padding: 10px;
+    text-align: center;
+  }
+  #button {
+    background: darkcyan;
+    color: whitesmoke;
+    box-sizing: content-box;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
